@@ -160,7 +160,7 @@
           const data = { name, vehicle, mobile, bill };
 
           try {
-            const res = await fetch("http://localhost:5000/api/save-details", {
+            const res = await fetch("https://lp-offer-backend.onrender.com/api/save-details", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(data),
